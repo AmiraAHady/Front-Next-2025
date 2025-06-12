@@ -4,11 +4,21 @@ import React from "react";
 
 export async function generateMetadata({ params }) {
   let { id } = await params;
-  let res = await fetch(`https://fakestoreapi.com/products/${id}`);
+  let res = await fetch(`https://fakestoreapi.com/products`);
   let product = await res.json();
   return {
     title: product.title,
   };
+}
+
+export async function generateStaticParams() {
+  let res = await fetch(`https://fakestoreapi.com/products`);
+  let products = await res.json();
+  const ids = products.map((product) => {
+    return { id: product.id.toString() };
+  });
+  console.log(ids);
+  return ids;
 }
 
 export default async function ProductDetails({ params }) {

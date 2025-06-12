@@ -60,8 +60,8 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/postList">
-                  Posts
+                <Link className="nav-link" href="/todo">
+                  Todo
                 </Link>
               </li>
               <li className="nav-item">
