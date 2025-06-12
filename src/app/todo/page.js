@@ -1,8 +1,9 @@
 import React from "react";
 
 export default async function TodoList() {
-  let res = await fetch("http://localhost:3000/api/todo");
-  let { data: allTodos } = await res.json();
+  // let res = await fetch("http://localhost:3000/api/todo");
+  // let { data: allTodos } = await res.json();
+  let  allTodos= [];
   return (
     <>
       {allTodos.map((todo) => (
