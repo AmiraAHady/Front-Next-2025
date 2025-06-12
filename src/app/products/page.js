@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 import ProductList from "@/components/productList";
 import Link from "next/link";
 import React, { Suspense } from "react";

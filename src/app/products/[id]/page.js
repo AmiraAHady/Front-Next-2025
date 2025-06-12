@@ -35,9 +35,9 @@ export default async function ProductDetails({ params }) {
       <div className="row">
         <div className="col-4" key={product.id}>
           <div className="card">
-            {/* <Image src="/flower.jpg" width={300} height={300} alt="flower" /> */}
+          
             <Image src={product.image} width={400} height={400} alt="flower" />
-            {/* <img src={product.image} className="card-img-top" alt="..." /> */}
+
             <div className="card-body">
               <h5 className="card-title">{product.title}</h5>
               <p className="card-text">{product.price}$</p>
