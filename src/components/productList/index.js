@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
@@ -10,7 +11,7 @@ export default async function ProductList() {
           <Link key={prod.id} href={`/products/${prod.id}`}>
             <div className="col">
               <div className="card">
-                <img src={prod.image} className="card-img-top" alt="..." />
+                <Image src={prod.image} width={400} height={400} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{prod.title}</h5>
                   <p className="card-text">{prod.price}$</p>
